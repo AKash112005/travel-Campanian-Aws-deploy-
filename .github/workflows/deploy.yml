@@ -15,11 +15,11 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./Frontend
+        working-directory: ./frontend
 
       - name: Build project
         run: npm run build
-        working-directory: ./Frontend
+        working-directory: ./frontend
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
@@ -29,4 +29,4 @@ jobs:
           aws-region: ap-southeast-2   # change if needed
 
       - name: Deploy to S3
-        run: aws s3 sync Frontend/dist s3://demo-porfoliok --delete
+        run: aws s3 sync frontend/dist s3://demo-porfoliok --delete
