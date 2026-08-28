@@ -94,7 +94,7 @@
     
     Designing and deploying serverless architectures
     
-    Integrating API Gateway with Lambda
+    Integrating API Gateway with Lambda 
     
     Hosting static applications on Amazon S3
     
